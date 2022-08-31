@@ -1,0 +1,14 @@
+
+.navigation {
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+ul {
+    margin-left: 10rem;
+}
+
+li {
+    padding: 0 1rem;
+}

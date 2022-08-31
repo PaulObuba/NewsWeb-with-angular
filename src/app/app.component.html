@@ -1,0 +1,61 @@
+<!-- <nav class="navbar navbar-expand-lg bg-light navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/technews">Tech News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/sportsnews">Sports News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> --> 
+
+  <nav class="flex justify-between items-center text-lg px-[2rem] py-[0.8rem] bg-primary text-white shadow-md" >
+    <h2 class="text-2xl"> NewsApp </h2>
+    <div class="hidden lg:flex">
+      <ul class='flex justify-between items-center'>
+        <li>
+          <a routerLink="">Home</a>
+        </li>
+        <li>
+          <a routerLink="/technews">Tech News</a>
+        </li>
+        <li>
+          <a routerLink="/sportsnews">Sports News</a>
+        </li>
+        <li>
+          <a routerLink="/entertainmentnews">Entertainment News</a>
+        </li>
+      </ul>
+    </div>
+    <button mat-mini-fab class="lg:hidden" (click)="toggleNav()">
+      <mat-icon class="font-bold text-2xl">menu</mat-icon>
+    </button>
+  </nav>
+  <div *ngIf="menuicon" class='flex flex-col justify-center items-center bg-light text-lg font-medium gap-1 py-[0.5rem]'>
+      <a routerLink="/" (click)="toggleNav()">Home</a>
+
+      <a routerLink="/technews" (click)="toggleNav()">Tech News</a>
+
+      <a routerLink="/sportsnews" (click)="toggleNav()">Sports News</a>
+
+      <a routerLink="/entertainmentnews" (click)="toggleNav()">Entertainment News</a>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <app-footer></app-footer>
+
+
+
+<!-- cf9ae03c07994077b5503e5930de298a -->

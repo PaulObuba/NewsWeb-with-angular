@@ -1,0 +1,16 @@
+
+
+<div class="container-fluid mt-5">
+  <p class='text-2xl font-bold'>Top Headlines </p>
+
+  <div class="row">
+    <div *ngFor=" let news of topheadingDisplay" class="col-lg-3 mt-3">
+      <div class="box">
+        <img src="{{news.urlToImage}}" width="100%" class='image' />
+        <h5 class='my-3'> {{news.title}} </h5>
+        <a href='{{news.url}}' target="_blank" class='btn btn-primary btn-sm mt-2'> Read more </a>
+      </div>
+    </div>
+  </div>
+</div>
+
